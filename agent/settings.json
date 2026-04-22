@@ -1,0 +1,13 @@
+{
+  "defaultProvider": "llama-cpp",
+  "defaultModel": "qwen3.6-35b-a3b",
+  "autoCompaction": true,
+  "compactionThreshold": 0.8,
+  "favorites": [
+    "llama-cpp/qwen3.6-35b-a3b",
+    "llama-cpp/qwen3-coder-30b-q4_k_m.gguf",
+    "llama-cpp/qwen2.5-coder-7b-q4_k_m.gguf",
+    "anthropic/claude-sonnet-4-6"
+  ],
+  "lastChangelogVersion": "0.68.0"
+}

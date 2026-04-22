@@ -1,0 +1,21 @@
+# Platform-specific binaries — each machine installs its own
+agent/bin/
+
+# Session logs — local only, can be large
+agent/sessions/
+
+# Credentials — never commit
+agent/auth.json
+
+# Extension node_modules if installed locally
+agent/extensions/*/node_modules/
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Compiled / cache artifacts
+*.jsonl
+__pycache__/
+*.pyc
