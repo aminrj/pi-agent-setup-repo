@@ -7,6 +7,9 @@ agent/sessions/
 # Credentials — never commit
 agent/auth.json
 
+# Cloned extension repos — reinstalled by pi from settings.json packages list
+agent/git/
+
 # Extension node_modules if installed locally
 agent/extensions/*/node_modules/
 node_modules/
