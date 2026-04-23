@@ -1,15 +1,14 @@
 {
-  "defaultProvider": "llama-cpp",
-  "defaultModel": "qwen3.6-35b-a3b",
+  "defaultProvider": "ollama",
+  "defaultModel": "qwen2.5-coder:14b-16k",
   "autoCompaction": true,
-  "compactionThreshold": 0.8,
+  "compactionThreshold": 0.80,
   "favorites": [
-    "llama-cpp/qwen3.6-35b-a3b",
-    "llama-cpp/qwen3-coder-30b-q4_k_m.gguf",
-    "llama-cpp/qwen2.5-coder-7b-q4_k_m.gguf",
+    "ollama/qwen2.5-coder:14b-16k",
+    "ollama/qwen3.6:latest",
+    "ollama/qwen3.5:9b-16k",
     "anthropic/claude-sonnet-4-6"
   ],
-  "lastChangelogVersion": "0.69.0",
   "lsp": {
     "python": true,
     "typescript": true

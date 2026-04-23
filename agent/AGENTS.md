@@ -1,8 +1,8 @@
 # Agent Instructions
 
 ## Inference constraints
-- Backend: llama.cpp on localhost:8081. One model loaded at a time.
-- Context window: up to 64k but treat 48k as the safe working limit.
+- Backend: Ollama on localhost:11434. Multiple models can run simultaneously (unlike llama.cpp).
+- Context window: up to 32k but treat 24k as the safe working limit.
 - When context exceeds 70%, write a TODO.md summarising remaining work before compacting.
 
 ## Work style
