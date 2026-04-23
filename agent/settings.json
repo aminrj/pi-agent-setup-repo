@@ -1,12 +1,12 @@
 {
   "defaultProvider": "ollama",
-  "defaultModel": "qwen2.5-coder:14b-16k",
+  "defaultModel": "qwen2.5-coder:14b-32k",
   "autoCompaction": true,
-  "compactionThreshold": 0.80,
+  "compactionThreshold": 0.8,
   "favorites": [
-    "ollama/qwen2.5-coder:14b-16k",
+    "ollama/qwen2.5-coder:14b-32k",
     "ollama/qwen3.6:latest",
-    "ollama/qwen3.5:9b-16k",
+    "ollama/qwen3.5:9b-64k",
     "anthropic/claude-sonnet-4-6"
   ],
   "lsp": {
@@ -18,5 +18,6 @@
     "git:github.com/shantanugoel/pi-web-utils",
     "npm:pi-subagents",
     "npm:pi-intercom"
-  ]
+  ],
+  "lastChangelogVersion": "0.69.0"
 }
