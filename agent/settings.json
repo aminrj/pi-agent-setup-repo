@@ -20,5 +20,8 @@
     "npm:pi-subagents",
     "npm:pi-intercom",
     "git:github.com/prateekmedia/pi-hooks"
+  ],
+  "skills": [
+    "~/.claude/skills"
   ]
 }
