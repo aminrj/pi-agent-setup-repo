@@ -22,3 +22,6 @@ Thumbs.db
 *.jsonl
 __pycache__/
 *.pyc
+
+# Runtime state
+agent/intercom/broker.pid
