@@ -17,7 +17,6 @@
     "npm:lsp-pi",
     "git:github.com/shantanugoel/pi-web-utils",
     "npm:pi-subagents",
-    "npm:pi-intercom",
-    "git:github.com/prateekmedia/pi-hooks"
+    "npm:pi-intercom"
   ]
 }
