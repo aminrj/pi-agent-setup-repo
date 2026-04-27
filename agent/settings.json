@@ -9,7 +9,7 @@
     "llama-cpp/qwen2.5-coder-7b-q4_k_m.gguf",
     "anthropic/claude-sonnet-4-6"
   ],
-  "lastChangelogVersion": "0.69.0",
+  "lastChangelogVersion": "0.70.2",
   "lsp": {
     "python": true,
     "typescript": true
