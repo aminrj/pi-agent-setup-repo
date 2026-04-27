@@ -2,7 +2,7 @@
   "defaultProvider": "llama-cpp",
   "defaultModel": "qwen3.6-35b-a3b",
   "autoCompaction": true,
-  "compactionThreshold": 0.8,
+  "compactionThreshold": 0.85,
   "favorites": [
     "llama-cpp/qwen3.6-35b-a3b",
     "llama-cpp/qwen3-coder-30b-q4_k_m.gguf",
