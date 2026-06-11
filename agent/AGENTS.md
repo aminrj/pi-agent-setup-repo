@@ -1,1 +1,1 @@
-/home/amine/git/molntek/pi-agent-config/AGENTS.md
+/home/amine/git/local-llms/pi-agent-config/AGENTS.md
