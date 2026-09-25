@@ -1,62 +1,114 @@
 {
-  "providers": {
-    "llama-cpp": {
-      "baseUrl": "http://127.0.0.1:8081/v1",
-      "api": "openai-completions",
-      "apiKey": "none",
-      "compat": {
-        "supportsDeveloperRole": false,
-        "supportsReasoningEffort": false
-      },
-      "models": [
-        {
-          "id": "qwen3-coder-30b-q4_k_m.gguf",
-          "name": "Qwen3-Coder 30B (primary)",
-          "reasoning": false,
-          "input": ["text"],
-          "contextWindow": 65536,
-          "maxTokens": 16384,
-          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 }
+    "providers": {
+        "llama-cpp": {
+            "baseUrl": "http://127.0.0.1:8081/v1",
+            "api": "openai-completions",
+            "apiKey": "none",
+            "compat": {
+                "supportsDeveloperRole": false,
+                "supportsReasoningEffort": false
+            },
+            "models": [
+                {
+                    "id": "qwen3.6-35b-a3b",
+                    "name": "Qwen3.6 35B MoE (reasoning)",
+                    "reasoning": false,
+                    "input": [
+                        "text"
+                    ],
+                    "contextWindow": 131072,
+                    "maxTokens": 16384,
+                    "cost": {
+                        "input": 0,
+                        "output": 0,
+                        "cacheRead": 0,
+                        "cacheWrite": 0
+                    }
+                }
+            ]
         },
-        {
-          "id": "qwen3.6-35b-a3b",
-          "name": "Qwen3.6 35B MoE (reasoning)",
-          "reasoning": false,
-          "input": ["text"],
-          "contextWindow": 131072,
-          "maxTokens": 32768,
-          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 }
+        "beellama": {
+            "baseUrl": "http://127.0.0.1:8082/v1",
+            "api": "openai-completions",
+            "apiKey": "none",
+            "compat": {
+                "supportsDeveloperRole": false,
+                "supportsReasoningEffort": false
+            },
+            "models": [
+                {
+                    "id": "qwen3.6-27b-dflash",
+                    "name": "Qwen3.6 27B Q5 + DFlash (BeeLlama)",
+                    "reasoning": true,
+                    "input": [
+                        "text",
+                        "image"
+                    ],
+                    "contextWindow": 122800,
+                    "maxTokens": 16384,
+                    "cost": {
+                        "input": 0,
+                        "output": 0,
+                        "cacheRead": 0,
+                        "cacheWrite": 0
+                    }
+                }
+            ]
         },
-        {
-          "id": "qwen2.5-coder-7b-q4_k_m.gguf",
-          "name": "Qwen2.5-Coder 7B (fast)",
-          "reasoning": false,
-          "input": ["text"],
-          "contextWindow": 16384,
-          "maxTokens": 4096,
-          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 }
+        "llamacpp-27b": {
+            "baseUrl": "http://127.0.0.1:8082/v1",
+            "api": "openai-completions",
+            "apiKey": "none",
+            "compat": {
+                "supportsDeveloperRole": false,
+                "supportsReasoningEffort": true
+            },
+            "models": [
+                {
+                    "id": "qwen3.8-27b",
+                    "name": "Qwen3.8 27B IQ4_XS + MTP",
+                    "reasoning": true,
+                    "input": [
+                        "text",
+                        "image"
+                    ],
+                    "contextWindow": 196608,
+                    "maxTokens": 16384,
+                    "cost": {
+                        "input": 0,
+                        "output": 0,
+                        "cacheRead": 0,
+                        "cacheWrite": 0
+                    }
+                }
+            ]
+        },
+        "llamacpp-mtp": {
+            "baseUrl": "http://127.0.0.1:8083/v1",
+            "api": "openai-completions",
+            "apiKey": "none",
+            "compat": {
+                "supportsDeveloperRole": false,
+                "supportsReasoningEffort": false
+            },
+            "models": [
+                {
+                    "id": "qwen3.6-35b-a3b-mtp",
+                    "name": "Qwen3.6 35B MoE + MTP",
+                    "reasoning": false,
+                    "input": [
+                        "text"
+                    ],
+                    "contextWindow": 131072,
+                    "maxTokens": 16384,
+                    "cost": {
+                        "input": 0,
+                        "output": 0,
+                        "cacheRead": 0,
+                        "cacheWrite": 0
+                    }
+                }
+            ]
         }
-      ]
-    },
-    "beellama": {
-      "baseUrl": "http://127.0.0.1:8082/v1",
-      "api": "openai-completions",
-      "apiKey": "none",
-      "compat": {
-        "supportsDeveloperRole": false,
-        "supportsReasoningEffort": false
-      },
-      "models": [
-        {
-          "id": "qwen3.6-27b-dflash",
-          "name": "Qwen3.6 27B Q5 + DFlash (BeeLlama)",
-          "reasoning": true,
-          "input": ["text", "image"],
-          "contextWindow": 122800,
-          "maxTokens": 32768,
-          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 }
-        }
-      ]
     }
-  }
 }

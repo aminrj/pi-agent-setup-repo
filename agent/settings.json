@@ -1,16 +1,19 @@
 {
-  "defaultProvider": "llama-cpp",
-  "defaultModel": "qwen3.6-35b-a3b",
-  "autoCompaction": true,
-  "compactionThreshold": 0.85,
+  "defaultProvider": "llamacpp-27b",
+  "defaultModel": "qwen3.8-27b",
+  "compaction": {
+    "enabled": true,
+    "reserveTokens": 36864,
+    "keepRecentTokens": 48000
+  },
   "favorites": [
+    "llamacpp-27b/qwen3.8-27b",
     "llama-cpp/qwen3.6-35b-a3b",
-    "llama-cpp/qwen3-coder-30b-q4_k_m.gguf",
-    "llama-cpp/qwen2.5-coder-7b-q4_k_m.gguf",
+    "llamacpp-mtp/qwen3.6-35b-a3b-mtp",
     "beellama/qwen3.6-27b-dflash",
     "anthropic/claude-sonnet-4-6"
   ],
-  "lastChangelogVersion": "0.79.1",
+  "lastChangelogVersion": "0.84.1",
   "lsp": {
     "python": true,
     "typescript": true
@@ -26,5 +29,6 @@
     "~/.claude/skills"
   ],
   "permissionLevel": "high",
-  "defaultThinkingLevel": "medium"
+  "defaultThinkingLevel": "medium",
+  "theme": "dark"
 }
