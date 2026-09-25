@@ -23,3 +23,10 @@ Thumbs.db
 __pycache__/
 *.pyc
 /agent/intercom/broker.pid
+
+# Dated backups left by config edits
+*.bak-*
+
+# Per-machine runtime state
+agent/models-store.json
+agent/trust.json
